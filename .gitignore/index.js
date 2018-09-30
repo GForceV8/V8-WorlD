@@ -203,8 +203,8 @@ bot.on("message", async function(message) {
 		    
 	    case "stream":
             var embed = new Discord.RichEmbed()
-                .addField(":tv: !gforcev8 ","Cette commande vous affiche le lien de stream de GForceV8")
-                .addField(":tv: !yoyomrjack ","Cette commande vous affiche le lien de stream de yoyomrjack")
+                .addField(":tv: - GForceV8 -","Lien de stream - :red_circle: https://goo.gl/4DLHDj -")
+                .addField(":tv: - yoyomrjack -","Lien de stream - :red_circle: https://goo.gl/wtAZGm -")
                 .addField(":tv: !* ","- A venir -")
                 .addField(":tv: !* ","- A venir -")
                 .addField(":tv: !* ","- A venir -")
@@ -239,14 +239,6 @@ bot.on("message", async function(message) {
 
             case "site":
             message.channel.sendMessage("Voici le lien du site internet du serveur V8-WorlD: :globe_with_meridians: https://goo.gl/RKa2XA")
-            break;
-
-            case "gforcev8":
-            message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de GForceV8: :red_circle: https://goo.gl/4DLHDj")
-            break;
-		    
-            case "yoyomrjack":
-            message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de yoyomrjack: :red_circle: https://goo.gl/wtAZGm")
             break;
 
             case "membres":
