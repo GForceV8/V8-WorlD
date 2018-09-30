@@ -182,6 +182,24 @@ bot.on("message", async function(message) {
                 message.channel.sendEmbed(embed)
 
                 break;
+            
+	    case "staff":
+            var embed = new Discord.RichEmbed()
+                .addField(":spy:", "-Fondateur/Dev- - @GForceV8 -")
+                .addField(":spy:", "-Co-Fondateur/Dev- - @yoyomrjack -")
+                .addField(":spy:", "---")
+                .addField(":spy:", "---")
+                .addField(":spy:", "---")
+                .addField(":spy:", "---")
+                .setColor("#0280FD")
+                .setFooter("Staff - V8-WorlD by @GForceV8")
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setDescription("Voici la liste du staff V8-WorlD - By @GForceV8.")
+                .setTimestamp()
+                message.delete()
+                message.channel.sendEmbed(embed)
+
+                break;
 
             case "aide2":
             var embed = new Discord.RichEmbed()
@@ -202,7 +220,7 @@ bot.on("message", async function(message) {
             break;
 
             case "site":
-            message.channel.sendMessage("Voici le lien du site de la TeamV8 : :globe_with_meridians: http://team-v8.e-monsite.com/")
+            message.channel.sendMessage("Voici le lien du site de la TeamV8 : :globe_with_meridians: https://goo.gl/RKa2XA")
             break;
 
             case "twitch":
@@ -210,25 +228,13 @@ bot.on("message", async function(message) {
             break;
 
             case "membres":
-            message.reply("Nous sommes actuellement " + (bot.users.size - 2) + " membres sur le **serveur Discord MultiGaming** !");
+            message.reply("Nous sommes actuellement " + (bot.users.size - 2) + " membres sur le **serveur Discord V8-WorlD** !");
             break;
             
             case "ping":
-            message.channel.sendMessage("Le bot MultiGaming a actuellement un ping de `" + bot.ping + " ms` ! ");
+            message.channel.sendMessage("Le bot V8-WorlD a actuellement un ping de `" + bot.ping + " ms` ! ");
             message.delete();
             break; 
-
-	    case "gforce":
-            message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de GForceV8 : :red_circle: https://www.twitch.tv/GForceV8")
-            break;
-
-	    case "gforce2":
-            message.channel.sendMessage("GForceV8 est l'empereur de ce serveur :p, et le Chef N°1 de la team V8 avec comme co-chef TribalV8..")
-            break;
-
-	    case "yoyo2":
-            message.channel.sendMessage("Yoyo est le Soufifre de la team V8 :p")
-            break;
 
             default:
             message.channel.sendMessage(":x: Commande invalide. Fait !aide pour voir toutes les commandes disponibles !")
