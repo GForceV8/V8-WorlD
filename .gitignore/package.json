@@ -1,0 +1,17 @@
+{
+  " name " : " V8-WorlD " ,
+  " version " : " 1.0.0 " ,
+  " description " : " Bot For V8-WorlD -Dev by GForceV8 " ,
+  " main " : " index.js " ,
+  " scripts " : {
+    " test " : " echo \" Erreur: aucun test spécifié \ " && exit 1 "
+  },
+  " author " : " GForceV8 " ,
+  " licence " : " ISC " ,
+  " dépendances " : {
+    " discord.js " : " ^ 11.2.1 " ,
+    " ffmpeg-binaries " : " ^ 3.2.2-3 " ,
+    " opusscript " : " 0.0.4 " ,
+    " ytdl-core " : " ^ 0.18.1 "
+  }
+}
