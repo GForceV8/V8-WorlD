@@ -200,6 +200,24 @@ bot.on("message", async function(message) {
                 message.channel.sendEmbed(embed)
 
                 break;
+		    
+	    case "steam":
+            var embed = new Discord.RichEmbed()
+                .addField(":tv: !gforcev8 ","Cette commande vous affiche le lien de stream de GForceV8")
+                .addField(":tv: !yoyomrjack ","Cette commande vous affiche le lien de stream de yoyomrjack")
+                .addField(":tv: !* ","- A venir -")
+                .addField(":tv: !* ","- A venir -")
+                .addField(":tv: !* ","- A venir -")
+                .addField(":tv: !* ","- A venir -")
+                .setColor("#0280FD")
+                .setFooter("Stream - V8-WorlD by @GForceV8")
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setDescription("Voici la liste des stream V8-WorlD - By @GForceV8.")
+                .setTimestamp()
+                message.delete()
+                message.channel.sendEmbed(embed)
+
+                break;
 
             case "aide":
             var embed = new Discord.RichEmbed()
