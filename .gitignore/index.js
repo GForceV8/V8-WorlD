@@ -203,12 +203,19 @@ bot.on("message", async function(message) {
 		    
 	    case "stream":
             var embed = new Discord.RichEmbed()
+	        --------------------------------------------------------------------------------------------
                 .addField(":tv: !gforcev8 ","Cette commande vous affiche le lien de stream de GForceV8")
+	        --------------------------------------------------------------------------------------------
                 .addField(":tv: !yoyomrjack ","Cette commande vous affiche le lien de stream de yoyomrjack")
+	        --------------------------------------------------------------------------------------------
                 .addField(":tv: !* ","- A venir -")
+	        --------------------------------------------------------------------------------------------
                 .addField(":tv: !* ","- A venir -")
+	        --------------------------------------------------------------------------------------------
                 .addField(":tv: !* ","- A venir -")
+	        --------------------------------------------------------------------------------------------
                 .addField(":tv: !* ","- A venir -")
+	        --------------------------------------------------------------------------------------------
                 .setColor("#0280FD")
                 .setFooter("Stream - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
