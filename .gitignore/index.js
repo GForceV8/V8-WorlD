@@ -226,7 +226,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Lien V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription(":globe_with_meridians: Merci de lire les point important - By @GForceV8.")
+                .setDescription("Merci de lire les point important - By @GForceV8.")
                 .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
