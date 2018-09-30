@@ -185,8 +185,8 @@ bot.on("message", async function(message) {
             
 	    case "staff":
             var embed = new Discord.RichEmbed()
-                .addField(":spy:", "-Fondateur/Dev- -GForceV8-")
-                .addField(":spy:", "-Co-Fondateur/Dev- -yoyomrjack-")
+                .addField(":spy:", "-Fonda/Dev- -GForceV8-")
+                .addField(":spy:", "-Co-Fonda/Dev- -yoyomrjack-")
                 .addField(":spy:", "---")
                 .addField(":spy:", "---")
                 .addField(":spy:", "---")
