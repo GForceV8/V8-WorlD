@@ -201,7 +201,7 @@ bot.on("message", async function(message) {
 
                 break;
 		    
-	    case "steam":
+	    case "stream":
             var embed = new Discord.RichEmbed()
                 .addField(":tv: !gforcev8 ","Cette commande vous affiche le lien de stream de GForceV8")
                 .addField(":tv: !yoyomrjack ","Cette commande vous affiche le lien de stream de yoyomrjack")
