@@ -179,9 +179,9 @@ bot.on("message", async function(message) {
                 .addField(":globe_with_meridians: !site","Cette commande vous affiche le lien du site internet de la TeamV8.")
 	    
                 .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
-	        ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
                 .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
-	        ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
                 .setColor("#0280FD")
                 .setFooter("Aide - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
