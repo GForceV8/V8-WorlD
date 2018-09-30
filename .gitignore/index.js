@@ -221,8 +221,8 @@ bot.on("message", async function(message) {
 
             case "lien":
             var embed = new Discord.RichEmbed()
-                .addField(":point_right:","Lien du site internet du serveur: https://goo.gl/RKa2XA")
-	        .addField(":point_right:","Lien a lire en 1er: https://goo.gl/caofZC")
+                .addField(":globe_with_meridians: Lien du site internet du serveur",":point_right: https://goo.gl/RKa2XA")
+	        .addField(":globe_with_meridians: Lien a lire en 1er",":point_right: https://goo.gl/caofZC")
                 .setColor("#0280FD")
                 .setFooter("Lien V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
