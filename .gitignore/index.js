@@ -219,13 +219,14 @@ bot.on("message", async function(message) {
 
                 break;
 
-            case "aide":
+            case "lien":
             var embed = new Discord.RichEmbed()
-                .addField(":globe_with_meridians: !site","Cette commande vous affiche le lien du site internet du serveur V8-WorlD")
+                .addField(":globe_with_meridians:","Lien du site internet du serveur: https://goo.gl/RKa2XA")
+	        .addField(":globe_with_meridians:","Lien a lire en 1er: https://goo.gl/caofZC")
                 .setColor("#0280FD")
-                .setFooter("V8-WorlD by @GForceV8")
+                .setFooter("Lien V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot V8-WorlD - By @GForceV8.")
+                .setDescription("Merci de lire les point important - By @GForceV8.")
                 .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
@@ -235,10 +236,6 @@ bot.on("message", async function(message) {
  
             case "V8-WorlD":
             message.channel.sendMessage("Le bot V8-WorlD est en ligne.");
-            break;
-
-            case "site":
-            message.channel.sendMessage("Voici le lien du site internet du serveur V8-WorlD: :globe_with_meridians: https://goo.gl/RKa2XA")
             break;
 
             case "membres":
