@@ -165,23 +165,21 @@ bot.on("message", async function(message) {
 
             case "aide-staff":
             var embed = new Discord.RichEmbed()
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
                 .addField(":rocket: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
+	    
 	        .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
-	        ----------------------------------------------------------------------------------------------------------------------------------------------------------------
+	    
                 .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
+	    
                 .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
+	    
                 .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)")
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
+	    
                 .addField(":globe_with_meridians: !site","Cette commande vous affiche le lien du site internet de la TeamV8.")
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
+	    
                 .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
+	    
                 .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
-	        ("----------------------------------------------------------------------------------------------------------------------------------------------------------------")
                 .setColor("#0280FD")
                 .setFooter("Aide - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -195,11 +193,17 @@ bot.on("message", async function(message) {
 	    case "staff":
             var embed = new Discord.RichEmbed()
                 .addField(":spy:", "-Fonda/Dev- -GForceV8-")
+	    
                 .addField(":spy:", "-Co-Fonda/Dev- -yoyomrjack-")
+	    
                 .addField(":spy:", "---")
+	    
                 .addField(":spy:", "---")
+	    
                 .addField(":spy:", "---")
+	    
                 .addField(":spy:", "---")
+	    
                 .setColor("#0280FD")
                 .setFooter("Staff - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -212,19 +216,17 @@ bot.on("message", async function(message) {
 		    
 	    case "stream":
             var embed = new Discord.RichEmbed()
-	        ("--------------------------------------------------------------------------------------------")
                 .addField(":tv: !gforcev8 ","Cette commande vous affiche le lien de stream de GForceV8")
-	        ("--------------------------------------------------------------------------------------------")
+
                 .addField(":tv: !yoyomrjack ","Cette commande vous affiche le lien de stream de yoyomrjack")
-	        ("--------------------------------------------------------------------------------------------")
+
                 .addField(":tv: !* ","- A venir -")
-	        ("--------------------------------------------------------------------------------------------")
+
                 .addField(":tv: !* ","- A venir -")
-	        ("--------------------------------------------------------------------------------------------")
+
                 .addField(":tv: !* ","- A venir -")
-	        ("--------------------------------------------------------------------------------------------")
+
                 .addField(":tv: !* ","- A venir -")
-	        ("--------------------------------------------------------------------------------------------")
                 .setColor("#0280FD")
                 .setFooter("Stream - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
