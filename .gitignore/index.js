@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("| V8-WorlD |");
+    bot.user.setGame("| V8-WorlD | Dev by GForceV8 |");
     console.log("Le bot a bien ete connecte")
 });
 
