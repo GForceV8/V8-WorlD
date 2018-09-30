@@ -175,8 +175,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Aide-Staff - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot V8-WorlD - By @GForceV8.")
-                .setTimestamp()
+                .setDescription("Voici la liste des commandes du bot V8-WorlD.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -193,8 +192,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Staff - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Liste du staff V8-WorlD - By @GForceV8.")
-                .setTimestamp()
+                .setDescription("Liste du staff V8-WorlD.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -211,8 +209,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Stream - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Liste des stream V8-WorlD - By @GForceV8.")
-                .setTimestamp()
+                .setDescription("Liste des stream V8-WorlD.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -225,7 +222,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Lien V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Merci de lire les point important - By @GForceV8.")
+                .setDescription("Merci de lire les point important.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
