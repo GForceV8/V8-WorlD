@@ -12,11 +12,11 @@ const PREFIX = "!";
 const EVERYONE = "@";
 
 bot.on("guildMemberRemove", function(member) {
-    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " viens de quitté le serveur, bye bye !" + " :x:");
+    member.guild.channels.find("name", "accueil").sendMessage(member.toString() + " viens de quitté le serveur, bye bye !" + " :x:");
 });
 
 bot.on("guildMemberAdd", function(member) {
-    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le serveur **MultiGaming** ! :white_check_mark:");
+    member.guild.channels.find("name", "accueil").sendMessage(member.toString() + " Bienvenue sur le serveur **V8-WorlD** ! :white_check_mark:");
 });
 
 bot.on("message", async function(message) {
@@ -65,7 +65,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - UNMUTE - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - UNMUTE - V8-WorlD par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('181704156170551296').sendMessage(":white_check_mark: Le membre " + user.username + " **a été unmute**.")
@@ -87,7 +87,7 @@ bot.on("message", async function(message) {
                 .addField(":scroll: Raison :", reasontimed)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - MUTE - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - MUTE - V8-WorlD par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " **a été mute** pour : " + reason);
@@ -109,7 +109,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - KICK - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - KICK - V8-WorlD par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " a été kick pour : " + reason);
@@ -134,7 +134,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - BAN - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - BAN - V8-WorlD par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             
@@ -157,13 +157,13 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure:", message.channel.createdAt)
                 .addField(":scroll: Salon :", message.channel)
                 .setColor("#0280FD")
-                .setFooter("LOG - PURGE - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - PURGE - V8-WorlD par @GForceV8#5880")
                 .setTimestamp()
             message.delete()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             break;
 
-            case "aide":
+            case "aide-staff":
             var embed = new Discord.RichEmbed()
                 .addField(":rocket: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
                 .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
@@ -174,9 +174,9 @@ bot.on("message", async function(message) {
                 .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
                 .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
                 .setColor("#0280FD")
-                .setFooter("Aide - MultiGaming by @GForceV8")
+                .setFooter("Aide - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot MultiGaming - By @GForceV8.")
+                .setDescription("Voici la liste des commandes du bot V8-WorlD - By @GForceV8.")
                 .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
@@ -185,8 +185,8 @@ bot.on("message", async function(message) {
             
 	    case "staff":
             var embed = new Discord.RichEmbed()
-                .addField(":spy:", "-Fondateur/Dev- - @GForceV8 -")
-                .addField(":spy:", "-Co-Fondateur/Dev- - @yoyomrjack -")
+                .addField(":spy:", "-Fondateur/Dev- -GForceV8-")
+                .addField(":spy:", "-Co-Fondateur/Dev- -yoyomrjack-")
                 .addField(":spy:", "---")
                 .addField(":spy:", "---")
                 .addField(":spy:", "---")
@@ -201,13 +201,13 @@ bot.on("message", async function(message) {
 
                 break;
 
-            case "aide2":
+            case "aide":
             var embed = new Discord.RichEmbed()
-                .addField(":tv: !gforce", "Cette commande vous affiche le lien de la chaîne de live Twitch de GForceV8 !.")
+                .addField(":globe_with_meridians: !site","Cette commande vous affiche le lien du site internet du serveur V8-WorlD")
                 .setColor("#0280FD")
-                .setFooter("MultiGaming by @GForceV8")
+                .setFooter("V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot MultiGaming - By @GForceV8.")
+                .setDescription("Voici la liste des commandes du bot V8-WorlD - By @GForceV8.")
                 .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
@@ -215,16 +215,20 @@ bot.on("message", async function(message) {
                 break;
  
  
-            case "MultiGaming":
-            message.channel.sendMessage("Le bot MultiGaming est en ligne.");
+            case "V8-WorlD":
+            message.channel.sendMessage("Le bot V8-WorlD est en ligne.");
             break;
 
             case "site":
-            message.channel.sendMessage("Voici le lien du site de la TeamV8 : :globe_with_meridians: https://goo.gl/RKa2XA")
+            message.channel.sendMessage("Voici le lien du site internet du serveur V8-WorlD: :globe_with_meridians: https://goo.gl/RKa2XA")
             break;
 
-            case "twitch":
-            message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de GForceV8 : :red_circle: https://www.twitch.tv/GForceV8")
+            case "gforcev8":
+            message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de GForceV8: :red_circle: https://goo.gl/4DLHDj")
+            break;
+		    
+            case "yoyomrjack":
+            message.channel.sendMessage("Voici le lien de la chaîne de live Twitch de yoyomrjack: :red_circle: https://goo.gl/wtAZGm")
             break;
 
             case "membres":
