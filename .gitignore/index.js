@@ -21,31 +21,18 @@ bot.on("guildMemberAdd", function(member) {
 
 bot.on("message", async function(message) {
     if (message.author.equals(bot.user)) return;
-
     if (!message.content.startsWith(PREFIX)) return;
-
     var args = message.content.substring(PREFIX.length).split (" ");
-
     var args2 = message.content.split(" ").slice(1);
-
     var suffix = args2.join(" ");
-
     var reason = args2.slice(1).join(" ");
-    
-    var reasontimed = args2.slice(2).join(' ')
-
+    var reasontimed = args2.slice(2).join(' ');
     var user = message.mentions.users.first();
-    
     var guild = message.guild;
-    
     var member = message.member;
-
-    var roleJoueur= member.guild.roles.find("name", "Membre")
-    
-    var roleMute = member.guild.roles.find("name", "Mute")
-    
-    var modlog = member.guild.channels.find("name", "log")
-    
+    var roleJoueur= member.guild.roles.find("name", "Membre");
+    var roleMute = member.guild.roles.find("name", "Mute");
+    var modlog = member.guild.channels.find("name", "log");
     var user = message.mentions.users.first();
 
 
