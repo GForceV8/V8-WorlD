@@ -234,7 +234,7 @@ bot.on("message", async function(message) {
             break;
 		    
             case "aide":
-            message.channel.sendMessage("Aucine commande pour les jouer.");
+            message.channel.sendMessage("Aucune commande pour les jouer.");
             break;
 
             case "membres":
