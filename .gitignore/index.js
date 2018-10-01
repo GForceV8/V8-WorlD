@@ -33,7 +33,7 @@ bot.on("message", async function(message) {
     var reason = args2.slice(1).join(" ");
     
     var reasontimed = args2.slice(2).join(' ')
-
+ 
     var user = message.mentions.users.first();
     
     var guild = message.guild;
