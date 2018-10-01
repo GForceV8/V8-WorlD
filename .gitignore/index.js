@@ -183,7 +183,7 @@ bot.on("message", async function(message) {
                 .addField(":globe_with_meridians: -Lien du site internet du serveur", ":point_right: https://goo.gl/RKa2XA.")
                 .addField(":globe_with_meridians: -Lien a lire en 1er", ":point_right: https://goo.gl/caofZC.")
                 .setColor("#0280FD")
-                .setFooter("Aide - MultiGaming by @GForceV8")
+                .setFooter("Liens - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Merci de lire les point important.")
                 message.delete()
