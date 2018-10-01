@@ -167,7 +167,7 @@ bot.on("message", async function(message) {
             var embed = new Discord.RichEmbed()
                 .addField(":spy:", "-Fonda/Dev- -GForceV8-")
                 .addField(":spy:", "-Co-Fonda/Dev- -yoyomrjack-")
-                .addField("::spy:", "-Admin- -ChrisV8-")
+                .addField(":spy:", "-Admin- -ChrisV8-")
                 .addField(":spy:", "---")
                 .setColor("#0280FD")
                 .setFooter("Staff - V8-WorlD by @GForceV8")
@@ -179,7 +179,7 @@ bot.on("message", async function(message) {
                 break;
 				
             case "liens"
-		 var embed = new Discord.RichEmbed()
+            var embed = new Discord.RichEmbed()
                 .addField(":globe_with_meridians: -Lien du site internet du serveur", ":point_right: https://goo.gl/RKa2XA.")
                 .addField(":globe_with_meridians: -Lien a lire en 1er", ":point_right: https://goo.gl/caofZC.")
                 .setColor("#0280FD")
