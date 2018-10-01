@@ -244,7 +244,7 @@ bot.on("message", async function(message) {
             case "ping":
             message.channel.sendMessage("Le bot V8-WorlD a actuellement un ping de `" + bot.ping + " ms` ! ");
             message.delete();
-            break; 
+            break;
 
             default:
             message.channel.sendMessage(":x: Commande invalide. Fait !aide pour voir toutes les commandes disponibles !")
