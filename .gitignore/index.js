@@ -178,11 +178,11 @@ bot.on("message", async function(message) {
 
                 break;
 				
-			case "liens"
-			var embed = new Discord.RichEmbed()
+            case "liens"
+            var embed = new Discord.RichEmbed()
                 .addField(":globe_with_meridians: -Lien du site internet du serveur", ":point_right: https://goo.gl/RKa2XA.")
                 .addField(":globe_with_meridians: -Lien a lire en 1er", ":point_right: https://goo.gl/caofZC.")
-				.setColor("#0280FD")
+                .setColor("#0280FD")
                 .setFooter("Aide - MultiGaming by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Merci de lire les point important.")
@@ -194,11 +194,11 @@ bot.on("message", async function(message) {
             case "stream":
             var embed = new Discord.RichEmbed()
                 .addField(":tv: - GForceV8 -", "Lien de stream - :red_circle: https://goo.gl/4DLHDj -")
-				.addField(":tv: - yoyomrjack -", "Lien de stream - :red_circle: https://goo.gl/wtAZGm -")
-				.addField(":tv: !* ", "***")
-				.addField(":tv: !* ", "***")
-				.addField(":tv: !* ", "***")
-				.addField(":tv: !* ", "***")
+                .addField(":tv: - yoyomrjack -", "Lien de stream - :red_circle: https://goo.gl/wtAZGm -")
+                .addField(":tv: !* ", "***")
+                .addField(":tv: !* ", "***")
+                .addField(":tv: !* ", "***")
+                .addField(":tv: !* ", "***")
                 .setColor("#0280FD")
                 .setFooter("MultiGaming by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -211,7 +211,7 @@ bot.on("message", async function(message) {
             case "aide-staff":
             var embed = new Discord.RichEmbed()
                 .addField(":rocket: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
-	            .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
+	        .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
                 .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
                 .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
                 .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)") 
