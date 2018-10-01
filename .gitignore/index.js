@@ -16,7 +16,7 @@ bot.on("guildMemberRemove", function(member) {
 });
 
 bot.on("guildMemberAdd", function(member) {
-    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le serveur **MultiGaming** ! :white_check_mark:");
+    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le serveur **V8-WorlD** ! :white_check_mark:");
 });
 
 bot.on("message", async function(message) {
@@ -33,7 +33,7 @@ bot.on("message", async function(message) {
     var reason = args2.slice(1).join(" ");
     
     var reasontimed = args2.slice(2).join(' ')
- 
+
     var user = message.mentions.users.first();
     
     var guild = message.guild;
@@ -166,11 +166,11 @@ bot.on("message", async function(message) {
             case "aide-staff":
             var embed = new Discord.RichEmbed()
                 .addField(":rocket: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
-	        .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
+	            .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
                 .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
                 .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
                 .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)") 
-                .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** MultiGaming.")
+                .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** V8-WorlD.")
                 .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
                 .setColor("#0280FD")
                 .setFooter("Aide-Staff - V8-WorlD by @GForceV8")
@@ -180,8 +180,38 @@ bot.on("message", async function(message) {
                 message.channel.sendEmbed(embed)
 
                 break;
-            
-	    case "staff":
+
+            case "stream":
+            var embed = new Discord.RichEmbed()
+                .addField(":tv: - GForceV8 -", "Lien de stream - :red_circle: https://goo.gl/4DLHDj -")
+				.addField(":tv: - yoyomrjack -", "Lien de stream - :red_circle: https://goo.gl/wtAZGm -")
+				.addField(":tv: !* ", "***")
+				.addField(":tv: !* ", "***")
+				.addField(":tv: !* ", "***")
+				.addField(":tv: !* ", "***")
+                .setColor("#0280FD")
+                .setFooter("MultiGaming by @GForceV8")
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setDescription("Voici la liste des commandes du bot MultiGaming - By @GForceV8.")
+                message.delete()
+                message.channel.sendEmbed(embed)
+
+                break;
+ 
+            case "liens":
+            var embed = new Discord.RichEmbed()
+                .addField(":globe_with_meridians: -Lien du site internet du serveur", ":point_right: https://goo.gl/RKa2XA.")
+                .addField(":globe_with_meridians: -Lien a lire en 1er", ":point_right: https://goo.gl/caofZC.")
+                .setColor("#0280FD")
+                .setFooter("Aide - MultiGaming by @GForceV8")
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setDescription("Merci de lire les point important.")
+                message.delete()
+                message.channel.sendEmbed(embed)
+
+                break;
+
+	        case "staff":
             var embed = new Discord.RichEmbed()
                 .addField(":spy:", "-Fonda/Dev- -GForceV8-")
                 .addField(":spy:", "-Co-Fonda/Dev- -yoyomrjack-")
@@ -197,37 +227,6 @@ bot.on("message", async function(message) {
                 message.channel.sendEmbed(embed)
 
                 break;
-		    
-	    case "stream":
-            var embed = new Discord.RichEmbed()
-                .addField(":tv: - GForceV8 -","Lien de stream - :red_circle: https://goo.gl/4DLHDj -")
-                .addField(":tv: - yoyomrjack -","Lien de stream - :red_circle: https://goo.gl/wtAZGm -")
-                .addField(":tv: !* ","- A venir -")
-                .addField(":tv: !* ","- A venir -")
-                .addField(":tv: !* ","- A venir -")
-                .addField(":tv: !* ","- A venir -")
-                .setColor("#0280FD")
-                .setFooter("Stream - V8-WorlD by @GForceV8")
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Liste des stream V8-WorlD.")
-                message.delete()
-                message.channel.sendEmbed(embed)
-
-                break;
-
-            case "lien":
-            var embed = new Discord.RichEmbed()
-                .addField(":globe_with_meridians: -Lien du site internet du serveur",":point_right: https://goo.gl/RKa2XA")
-	        .addField(":globe_with_meridians: -Lien a lire en 1er",":point_right: https://goo.gl/caofZC")
-                .setColor("#0280FD")
-                .setFooter("Lien V8-WorlD by @GForceV8")
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Merci de lire les point important.")
-                message.delete()
-                message.channel.sendEmbed(embed)
-
-                break;
- 
  
             case "world":
             message.channel.sendMessage("Le bot V8-WorlD est en ligne.");
