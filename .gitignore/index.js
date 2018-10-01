@@ -179,7 +179,7 @@ bot.on("message", async function(message) {
                 break;
 				
             case "liens"
-            var embed = new Discord.RichEmbed()
+		 var embed = new Discord.RichEmbed()
                 .addField(":globe_with_meridians: -Lien du site internet du serveur", ":point_right: https://goo.gl/RKa2XA.")
                 .addField(":globe_with_meridians: -Lien a lire en 1er", ":point_right: https://goo.gl/caofZC.")
                 .setColor("#0280FD")
@@ -200,7 +200,7 @@ bot.on("message", async function(message) {
                 .addField(":tv: !* ", "***")
                 .addField(":tv: !* ", "***")
                 .setColor("#0280FD")
-                .setFooter("MultiGaming by @GForceV8")
+                .setFooter("Stream V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Voici la liste des commandes du bot MultiGaming - By @GForceV8.")
                 message.delete()
