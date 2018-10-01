@@ -65,7 +65,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - UNMUTE - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - UNMUTE - V8-WorlD par @GForceV8")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('181704156170551296').sendMessage(":white_check_mark: Le membre " + user.username + " **a été unmute**.")
@@ -87,7 +87,7 @@ bot.on("message", async function(message) {
                 .addField(":scroll: Raison :", reasontimed)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - MUTE - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - MUTE - V8-WorlD par @GForceV8")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " **a été mute** pour : " + reason);
@@ -109,7 +109,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - KICK - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - KICK - V8-WorlD par @GForceV8")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " a été kick pour : " + reason);
@@ -134,7 +134,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - BAN - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - BAN - V8-WorlD par @GForceV8")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             
@@ -157,25 +157,35 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure:", message.channel.createdAt)
                 .addField(":scroll: Salon :", message.channel)
                 .setColor("#0280FD")
-                .setFooter("LOG - PURGE - MultiGaming par @GForceV8#5880")
+                .setFooter("LOG - PURGE - V8-WorlD par @GForceV8")
                 .setTimestamp()
             message.delete()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             break;
-
-            case "aide-staff":
+ 
+            case "staff":
             var embed = new Discord.RichEmbed()
-                .addField(":rocket: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
-	            .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
-                .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
-                .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
-                .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)") 
-                .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** V8-WorlD.")
-                .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
+                .addField(":spy:", "-Fonda/Dev- -GForceV8-")
+                .addField(":spy:", "-Co-Fonda/Dev- -yoyomrjack-")
+                .addField("::spy:", "-Admin- -ChrisV8-")
+                .addField(":spy:", "---")
                 .setColor("#0280FD")
-                .setFooter("Aide-Staff - V8-WorlD by @GForceV8")
+                .setFooter("Staff - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot V8-WorlD.")
+                .setDescription("Liste du staff V8-WorlD.")
+                message.delete()
+                message.channel.sendEmbed(embed)
+
+                break;
+				
+			case "liens"
+			var embed = new Discord.RichEmbed()
+                .addField(":globe_with_meridians: -Lien du site internet du serveur", ":point_right: https://goo.gl/RKa2XA.")
+                .addField(":globe_with_meridians: -Lien a lire en 1er", ":point_right: https://goo.gl/caofZC.")
+				.setColor("#0280FD")
+                .setFooter("Aide - MultiGaming by @GForceV8")
+                .setAuthor(message.author.username, message.author.avatarURL)
+                .setDescription("Merci de lire les point important.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -197,37 +207,25 @@ bot.on("message", async function(message) {
                 message.channel.sendEmbed(embed)
 
                 break;
- 
-            case "liens":
+
+            case "aide-staff":
             var embed = new Discord.RichEmbed()
-                .addField(":globe_with_meridians: -Lien du site internet du serveur", ":point_right: https://goo.gl/RKa2XA.")
-                .addField(":globe_with_meridians: -Lien a lire en 1er", ":point_right: https://goo.gl/caofZC.")
+                .addField(":rocket: !ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
+	            .addField(":door: !kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
+                .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
+                .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
+                .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)") 
+                .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** V8-WorlD.")
+                .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
                 .setColor("#0280FD")
-                .setFooter("Aide - MultiGaming by @GForceV8")
+                .setFooter("Aide-Staff - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Merci de lire les point important.")
+                .setDescription("Voici la liste des commandes du bot V8-WorlD.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
                 break;
 
-	        case "staff":
-            var embed = new Discord.RichEmbed()
-                .addField(":spy:", "-Fonda/Dev- -GForceV8-")
-                .addField(":spy:", "-Co-Fonda/Dev- -yoyomrjack-")
-                .addField(":spy:", "-Admin- -ChrisV8-")
-                .addField(":spy:", "---")
-                .addField(":spy:", "---")
-                .addField(":spy:", "---")
-                .setColor("#0280FD")
-                .setFooter("Staff - V8-WorlD by @GForceV8")
-                .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Liste du staff V8-WorlD.")
-                message.delete()
-                message.channel.sendEmbed(embed)
-
-                break;
- 
             case "world":
             message.channel.sendMessage("Le bot V8-WorlD est en ligne.");
             break;
