@@ -229,7 +229,7 @@ bot.on("message", async function(message) {
                 break;
  
  
-            case "v8-world":
+            case "world":
             message.channel.sendMessage("Le bot V8-WorlD est en ligne.");
             break;
 		    
