@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 var bot = new Discord.Client();
 
 bot.on("ready", function() {
-    bot.user.setGame("| V8-WorlD | Dev by GForceV8 |");
+    bot.user.setGame("||V8-WorlD|Dev by GForceV8||");
     console.log("Le bot a bien ete connecte")
 });
 
@@ -12,27 +12,40 @@ const PREFIX = "!";
 const EVERYONE = "@";
 
 bot.on("guildMemberRemove", function(member) {
-    member.guild.channels.find("name", "accueil").sendMessage(member.toString() + " viens de quitté le serveur, bye bye !" + " :x:");
+    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " viens de quitté le serveur, bye bye !" + " :x:");
 });
 
 bot.on("guildMemberAdd", function(member) {
-    member.guild.channels.find("name", "accueil").sendMessage(member.toString() + " Bienvenue sur le serveur **V8-WorlD** ! :white_check_mark:");
+    member.guild.channels.find("name", "bienvenue").sendMessage(member.toString() + " Bienvenue sur le serveur **MultiGaming** ! :white_check_mark:");
 });
 
 bot.on("message", async function(message) {
     if (message.author.equals(bot.user)) return;
+
     if (!message.content.startsWith(PREFIX)) return;
+
     var args = message.content.substring(PREFIX.length).split (" ");
+
     var args2 = message.content.split(" ").slice(1);
+
     var suffix = args2.join(" ");
+
     var reason = args2.slice(1).join(" ");
-    var reasontimed = args2.slice(2).join(' ');
+    
+    var reasontimed = args2.slice(2).join(' ')
+
     var user = message.mentions.users.first();
+    
     var guild = message.guild;
+    
     var member = message.member;
-    var roleJoueur= member.guild.roles.find("name", "Membre");
-    var roleMute = member.guild.roles.find("name", "Mute");
-    var modlog = member.guild.channels.find("name", "log");
+
+    var roleJoueur= member.guild.roles.find("name", "Membre")
+    
+    var roleMute = member.guild.roles.find("name", "Mute")
+    
+    var modlog = member.guild.channels.find("name", "log")
+    
     var user = message.mentions.users.first();
 
 
@@ -52,7 +65,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - UNMUTE - V8-WorlD par @GForceV8#5880")
+                .setFooter("LOG - UNMUTE - MultiGaming par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('181704156170551296').sendMessage(":white_check_mark: Le membre " + user.username + " **a été unmute**.")
@@ -74,7 +87,7 @@ bot.on("message", async function(message) {
                 .addField(":scroll: Raison :", reasontimed)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - MUTE - V8-WorlD par @GForceV8#5880")
+                .setFooter("LOG - MUTE - MultiGaming par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " **a été mute** pour : " + reason);
@@ -96,7 +109,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - KICK - V8-WorlD par @GForceV8#5880")
+                .setFooter("LOG - KICK - MultiGaming par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " a été kick pour : " + reason);
@@ -121,7 +134,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure :", message.channel.createdAt)
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setFooter("LOG - BAN - V8-WorlD par @GForceV8#5880")
+                .setFooter("LOG - BAN - MultiGaming par @GForceV8#5880")
                 .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             
@@ -144,7 +157,7 @@ bot.on("message", async function(message) {
                 .addField(":clock10: Heure:", message.channel.createdAt)
                 .addField(":scroll: Salon :", message.channel)
                 .setColor("#0280FD")
-                .setFooter("LOG - PURGE - V8-WorlD par @GForceV8#5880")
+                .setFooter("LOG - PURGE - MultiGaming par @GForceV8#5880")
                 .setTimestamp()
             message.delete()
             member.guild.channels.find("name", "log").sendEmbed(embed);
