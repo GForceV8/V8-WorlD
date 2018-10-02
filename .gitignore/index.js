@@ -66,7 +66,6 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("LOG - UNMUTE - V8-WorlD by @GForceV8#5880")
-                .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('181704156170551296').sendMessage(":white_check_mark: Le membre " + user.username + " **a été unmute**.")
             break;
@@ -88,7 +87,6 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("LOG - MUTE - V8-WorlD by @GForceV8#5880")
-                .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " **a été mute** pour : " + reason);
             break;
@@ -110,7 +108,6 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("LOG - KICK - V8-WorlD by @GForceV8#5880")
-                .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " a été kick pour : " + reason);
        
@@ -135,7 +132,6 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setFooter("LOG - BAN - V8-WorlD by @GForceV8#5880")
-                .setTimestamp()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             
             bot.channels.get('412561980864462849').sendMessage(":white_check_mark: Le membre " + user.username + " a été banni pour: " + reason);
@@ -158,7 +154,6 @@ bot.on("message", async function(message) {
                 .addField(":scroll: Salon :", message.channel)
                 .setColor("#0280FD")
                 .setFooter("LOG - PURGE - V8-WorlD by @GForceV8#5880")
-                .setTimestamp()
             message.delete()
             member.guild.channels.find("name", "log").sendEmbed(embed);
             break;
@@ -176,7 +171,6 @@ bot.on("message", async function(message) {
                 .setFooter("Aide-Staff - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Voici la liste des commandes du bot V8-WorlD.")
-                .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -195,7 +189,6 @@ bot.on("message", async function(message) {
                 .setFooter("Staff V8-WorlD - by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Voici la liste des commandes du bot V8-WorlD.")
-                .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -214,7 +207,6 @@ bot.on("message", async function(message) {
                 .setFooter("Steam V8-WorlD - by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Voici la liste des commandes du bot V8-WorlD.")
-                .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -228,7 +220,6 @@ bot.on("message", async function(message) {
                 .setFooter("Liens V8-WorlD - by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
                 .setDescription("Voici la liste des commandes du bot V8-WorlD.")
-                .setTimestamp()
                 message.delete()
                 message.channel.sendEmbed(embed)
 
