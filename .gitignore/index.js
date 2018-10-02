@@ -189,7 +189,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Staff V8-WorlD - by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot V8-WorlD.")
+                .setDescription("Liste de Staff de V8-WorlD.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -207,7 +207,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Steam V8-WorlD - by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot V8-WorlD.")
+                .setDescription("Liste des stream V8-WorlD.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
@@ -220,7 +220,7 @@ bot.on("message", async function(message) {
                 .setColor("#0280FD")
                 .setFooter("Liens V8-WorlD - by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
-                .setDescription("Voici la liste des commandes du bot V8-WorlD.")
+                .setDescription("Merci de lire les chose importante - V8-WorlD.")
                 message.delete()
                 message.channel.sendEmbed(embed)
 
