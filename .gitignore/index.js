@@ -162,11 +162,11 @@ bot.on("message", async function(message) {
             var embed = new Discord.RichEmbed()
                 .addField(":rocket: *ban", "Cette commande permet de bannir un utilisateur ! Pour l'utiliser, faites !ban @(utilisateur) + (raison)")
                 .addField(":door: *kick", "Cette commande permet de kick un utilisateur ! Pour l'utiliser, faites !kick @(utilisateur) + (raison)")
-                .addField(":wastebasket: !purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
-                .addField(":mute: !mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
-                .addField(":loud_sound: !unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)") 
-                .addField(":busts_in_silhouette: !membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** V8-WorlD.")
-                .addField(":level_slider: !ping","Cette commande vous affiche le ping actuel **du bot**.")
+                .addField(":wastebasket: *purge", "Cette commande permet de supprimé des messages beaucoup plus rapidement ! Pour l'utiliser, faites !purge (nombredemessages)")
+                .addField(":mute: *mute", "Cette commande permet de muté un utilisateur. Pour l'utiliser, faites .mute @(utilisateur) + (raison)")
+                .addField(":loud_sound: *unmute", "Cette commande permet d'unmute un utilisateur. Pour l'utiliser, faites .unmute @(utilisateur)") 
+                .addField(":busts_in_silhouette: *membres","Cette commande vous affiche le nombre de membre actuel **sur le serveur Discord** V8-WorlD.")
+                .addField(":level_slider: *ping","Cette commande vous affiche le ping actuel **du bot**.")
                 .setColor("#0280FD")
                 .setFooter("Aide-Staff - V8-WorlD by @GForceV8")
                 .setAuthor(message.author.username, message.author.avatarURL)
@@ -244,7 +244,7 @@ bot.on("message", async function(message) {
             break; 
 
             default:
-            message.channel.sendMessage(":x: Commande invalide. Fait !aide pour voir toutes les commandes disponibles !")
+            message.channel.sendMessage(":x: Commande invalide. Fait *aide pour voir toutes les commandes disponibles !")
             message.delete();
         }
     });
